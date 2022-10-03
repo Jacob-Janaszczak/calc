@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.title1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5 auto;
+    text-align: center;
+    background-color: rgb(39, 138, 125);
+    color: white;
+}
+
+.container {
+    max-width: auto;
+    margin: 0 auto;
+    margin-left: 5px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    padding: 5px 15px;
+}
+
+.table {
+    font: Arial;
+    border-collapse: collapse;
+    width: 20%;
+    margin: 0 auto;
+
+}
+
+.tableRow:nth-child(even) {
+    background-color: rgb(217, 219, 219);
+}
+
+.tableRow:hover {
+    background-color: rgb(39, 138, 125);
+}
+
+.tableContainer {
+    overflow-x: auto;
+
+}
+
+.caption {
+    caption-side: top;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    font-weight: 700;
+
+}
+
+.tableHeader {
+    color: white;
+    background-color: rgb(39, 138, 125);
+}
+
+.tableCell {
+    border: 2px solid white;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+
+
+}
+
+.form {
+    margin: 25px auto;
+
+
+
+}
+
+.legend {
+
+    text-align: center;
+    background-color: rgb(39, 138, 125);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+.form__labelText {
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+    margin-right: 5px;
+
+
+}
+
+.form__field {
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 200px;
+    width: 100%;
+
+}
+
+.form__field--option {
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 150px;
+    width: 100%;
+    
+
+}
+
+.form__field--option:hover {
+    border: 1px solid rgb(39, 138, 125);
+
+
+}
+
+.form__button {
+    width: 100%;
+    border: none;
+    background-color: rgb(39, 138, 125);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+.form__button:hover {
+    background-color: rgb(39, 138, 110);
+}
+
+.form__button:active {
+    background-color: rgb(39, 138, 100);
+}
+
+.form__fieldset {
+    border: 2px solid rgb(39, 138, 125);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.form__field:required {
+    border-color: rgb(39, 138, 125);
+}
+
+.form__result {
+
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.form__result--on {
+    background-color: rgb(39, 138, 125);
+    display: inline-block;
+    min-width: 100px;
+    max-width: 500px;
+    text-align: center;
+    color: white;
+}

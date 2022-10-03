@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+    <title>Calc</title>
+</head>
+
+<body>
+    <div class="container">
+        <p class="title1">Narzędzie do obliczania kursów walut
+        </p>
+        <section class="currencyTable">
+            <div class="tableContainer">
+                <table class="table">
+                    <caption class="caption">Tabela kursów walut</caption>
+                    <tr class="tableRow">
+                        <th class="tableCell tableHeader" scope="col">Waluta</th>
+                        <th class="tableCell tableHeader" scope="col">Złoty</th>
+                        <th class="tableCell tableHeader" scope="col">Euro</th>
+                        <th class="tableCell tableHeader" scope="col">Dolar</th>
+                        <th class="tableCell tableHeader" scope="col">Jen</th>
+
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableCell tableHeader" scope="row">Złoty</th>
+                        <th class="tableCell js-zlzl">1</td>
+                        <th class="tableCell js-zleur">0,21</td>
+                        <th class="tableCell js-zldol">0,19</td>
+                        <th class="tableCell js-zljen">30,17</td>
+
+
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableCell tableHeader" scope="row">Euro</th>
+                        <th class="tableCell js-eur:zl">4.67</td>
+                        <th class="tableCell js-eur:eur">1</td>
+                        <th class="tableCell js-eur:dol">1.11</td>
+                        <th class="tableCell js-eur:jen">144.83</td>
+
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableCell tableHeader" scope="row">Dolar</th>
+                        <th class="tableCell js-dol:zl">4.55</td>
+                        <th class="tableCell js-dol:eur">0.89</td>
+                        <th class="tableCell js-dol:dol">1</td>
+                        <th class="tableCell js-dol:jen">121.13</td>
+
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableCell tableHeader" scope="row">Jen</th>
+                        <th class="tableCell js-jen:zl">0.033</td>
+                        <th class="tableCell js-jen:eur">0.0063</td>
+                        <th class="tableCell js-jen:dol">0.007</td>
+                        <th class="tableCell js-jen:jen">1</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="section__form">
+            <form class="form js-form">
+                <fieldset class="form__fieldset">
+                    <legend class="legend">Kalkulator walut</legend>
+
+                    <p>
+                        <label> <span class="form__labelText">
+                                Wybierz walutę
+                            </span> <select name="chooseCurrency" class="form__field--option js-option1">
+                                <option value="euro" selected>Euro</option>
+                                <option value="dolar">Dolar</option>
+                                <option value="zloty" selected>Polski złoty</option>
+                                <option value="jen">Jen</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span class="form__labelText"> Podaj kwotę:</span> <input class="form__field js-sum"
+                                type="number" min="0.01" required autofocus step="0.01">
+                        </label>
+                    </p>
+                    <P>
+                        <label> <span class="form__labelText">
+                                Wybierz walutę docelową : </span>
+                            <select name="chooseCurrency" class="form__field--option js-option2">
+                                <option value="euro" selected>Euro</option>
+                                <option value="dolar">Dolar</option>
+                                <option value="zloty">Polski złoty</option>
+                                <option value="jen">Jen</option>
+                            </select>
+                        </label>
+                    </P>
+                </fieldset>
+                <p>
+                    <button class="form__button">Policz wartość</button>
+                </p>
+                <p class="form__result">Kwota: <span class="js-sumShow"> </span><span class="cs-currencyFirst">   
+                    </span>
+                    <span class="js-currencyFirst">
+                    </span>
+                </p>
+                <p class="form__result">Wartość: <span class="js-result form__result--on"></span><span
+                        class="js-currencySecond"> </span> </p>
+            </form>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
