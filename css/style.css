@@ -8,12 +8,14 @@ html {
 
 .title1 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 800;
     margin: 5 auto;
     text-align: center;
+    color: rgb(255, 255, 255);
     background-color: rgb(39, 138, 125);
-    color: white;
 }
+
+
 
 .container {
     max-width: auto;
@@ -37,8 +39,13 @@ html {
 
 }
 
-.tableRow:nth-child(even) {
+.tableRow {
     background-color: rgb(217, 219, 219);
+}
+
+
+.tableRow:nth-child(even) {
+    background-color: rgba(173, 173, 173, 0.534);
 }
 
 .tableRow:hover {
@@ -47,6 +54,7 @@ html {
 
 .tableContainer {
     overflow-x: auto;
+ 
 
 }
 
@@ -56,6 +64,7 @@ html {
     font-size: 20px;
     border: 2px solid rgb(255, 255, 255);
     font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.773);
 
 }
 
@@ -75,6 +84,7 @@ html {
 
 .form {
     margin: 25px auto;
+    
 
 
 
@@ -93,10 +103,13 @@ html {
 
 .form__labelText {
     display: inline-block;
-    max-width: 300px;
+    max-width: 200px;
     width: 100%;
-    margin-right: 5px;
-
+    margin-right: 105px;
+    background-color: rgba(39, 138, 125, 0.701);
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
 
 }
 
@@ -160,10 +173,14 @@ html {
     font-size: 23px;
     font-weight: 900;
     color: rgb(0, 0, 0);
+    background-color: rgb(249, 249, 249);
+    border-radius: 5px;
+    max-width: 500px;
     
 }
 .form__result--on {
-    background-color: rgb(39, 138, 125);
+    background-color: rgba(39, 138, 125, 0.608);
+   
     display: inline-block;
     min-width: 100px;
     max-width: 500px;
